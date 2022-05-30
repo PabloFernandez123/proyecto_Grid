@@ -19,6 +19,16 @@ body {
     text-align: center;
     font-size: 2.9em;
     text-transform: uppercase;
+    animation-name: animacion;
+    animation-duration: 4s;
+    animation-delay: 2s; 
+    animation-iteration-count: infinite;
+
+}
+@keyframes animacion {
+    0% {color: #000000;}
+    25% {color: #cdcd57;}
+    50% {color: #00ffff;}
 }
 
 /* CONTAINER */
@@ -43,6 +53,24 @@ body {
     grid-column: 1/-1;
     background-color: #1e272e;
     color: #ffffff;
+}
+.container .header h1{
+    
+    color: #ffffff;
+    animation-name: mianimacion;
+    animation-duration: 4s;
+    animation-delay: 2s;
+    position: relative;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in;
+    
+}
+@keyframes mianimacion {
+  0% {color: #ffffff; left: 0;top: 0px;}
+  25% {color: #7fffd4; left: 300px;top: 0px;}
+  50% {color: #7fffd4; left: 300px;top: 0;}
+  
+
 }
 
 .container>.content {
@@ -105,6 +133,21 @@ div a{
 @media screen and (max-width: 768px) {
     .header {
         text-align: center;
+    }
+    .container .header h1{
+    
+        color: #ffffff;
+        animation-name: mianimacion;
+        animation-duration: 4s;
+        animation-delay: 3s;
+        position: static;
+        animation-iteration-count: infinite;
+        
+    }
+    @keyframes mianimacion {
+      0% {color: #ffffff; left: 0;top: 0px;}
+      25% {color: aquamarine; left: 300px;top: 0px;}
+    
     }
     .container .content {
         grid-column: 1 / -1;
