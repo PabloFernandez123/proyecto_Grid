@@ -196,7 +196,7 @@ div a{
 }
 .contenedor .galeria img:hover{
     padding: 5px 10px;
-    background: #fff;
+    background: rgb(47, 142, 147);
     color: black;
     border-radius: 10px;
 }
