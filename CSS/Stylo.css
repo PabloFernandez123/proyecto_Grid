@@ -1,4 +1,4 @@
-* {
+*{
     margin: 0;
     padding: 0;
 }
@@ -107,7 +107,7 @@ body {
     margin-top: 5px;
 }
 
-.container>.related-post {
+/*.container>.related-post {
     background: #2d3436;
     color: #ffffff;
     height: 20px;
@@ -116,6 +116,14 @@ body {
     align-items: center;
     justify-content: center;
     transition: all 0.5s ease;
+}*/
+.logo{
+    width: 200px;
+    padding: 10px 0;
+}
+.iconos-redes-header{
+    width: 30px;
+    margin: 5px;
 }
 
 .container>.related-post:hover {
@@ -199,6 +207,11 @@ div a{
     background: #fff;
     color: black;
     border-radius: 10px;
+}
+.container>.header, .container>.footer {
+    grid-column: 1/-1;
+    background-color: #1e272e;
+    color: #ffffff;
 }
 @media screen and (max-width: 768px) {
     .header {
